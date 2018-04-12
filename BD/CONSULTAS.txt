@@ -1,0 +1,5 @@
+Buscar municipio y departamento
+SELECT A.id_proyecto, A.nombre_proyecto, A.descripcion, A.correo  FROM tbl_proyectos A INNER JOIN tbl_municipios B on A.id_municipio= B.id_municipio INNER JOIN tbl_departamentos C on A.id_departamento = C.id_departamento WHERE 1=1 AND departamento LIKE '%francisco morazan%'  AND municipio LIKE '%santa lucia%'
+
+Buscar tabla completa
+SELECT A.id_proyecto, A.nombre_proyecto, A.descripcion, A.correo, B.municipio, C.departamento FROM tbl_proyectos A INNER JOIN tbl_municipios B on A.id_municipio= B.id_municipio INNER JOIN tbl_departamentos C on A.id_departamento = C.id_departamento 
